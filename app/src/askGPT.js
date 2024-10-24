@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const askGPT = async (userPrompt) => {
-  const API_KEY = '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';
+  const API_KEY = 'your_key';
 
   const ecoFriendlyPrompt = `
     Tu es un assistant virtuel pour proposer un voyage écoresponsable. Pour chaque réponse, concentre-toi sur récolter des informations sur les préférences de voyages comme l'âge la destination le point de départ combien de temps de voyages.
