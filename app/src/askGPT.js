@@ -1,7 +1,11 @@
 import axios from 'axios';
+import dotenv from 'dotenv';
+
+// Charger les variables d'environnement depuis le fichier .env
+dotenv.config();
 
 const askGPT = async (userPrompt) => {
-  const API_KEY = 'your_key';
+  const API_KEY = process.env.OPENAI_API_KEY;  // Récupérer la clé API depuis les variables d'environnement
 
   const ecoFriendlyPrompt = `
     Tu es un assistant virtuel pour proposer un voyage écoresponsable. Pour chaque réponse, concentre-toi sur récolter des informations sur les préférences de voyages comme l'âge la destination le point de départ combien de temps de voyages.
